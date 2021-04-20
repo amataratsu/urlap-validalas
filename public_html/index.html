@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lakatos Balázs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="urlapkezeles.js" type="text/javascript"></script>
+        <link href="formazasok.css" rel="stylesheet" type="text/css"/>
+        <link href="szerkezet.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+
+        <script src="urlap validacio.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Üdvözöljük a weblapunkon!</h1>
+            </header>
+            <nav>
+                <a href="index.html">Űrlap</a>
+                <a href="#">Menü 1</a> 
+                <a href="#">Menü 2</a>
+
+            </nav>
+            <article>
+                <h2>Kérem adja meg az adatait!</h2>
+
+                <div id="box1">
+                    <form method="get" >
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="nev">Név</label>
+                                <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+                    <form method="get" >
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="E-mail">Email</label>
+                                <input type="text" name="E-mail" id="E-mail" placeholder="Adja meg az E-mail címét." title="@-ot és .hu/.eu/stb... tartalmaznia kell." >
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form method="get" >
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="E-mail">Email</label>
+                                <input type="text" name="E-mailÚjra" id="E-mailÚjra" placeholder="Adja meg az E-mail címét Újra." title="Meg kell eggyezni az Email címmel!" >
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form method="get" >
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="tel">Telefon szám:</label>
+                                <input type="text" name="tel" id="tel" placeholder="Adja meg a telefon számát." title="Ezen érjük el probléma esetén." >
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="box2">
+                    <form method="get" >
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="web">Weboldal címe:</label>
+                                <input type="text" name="web" id="web" placeholder="Adja meg a weboldala címét." title="Opcionális lehetőség." >
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form method="get">
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="prio">Prioritás mértéke</label>
+                                <select id="prio" name="prio">
+                                    <option value="kicsi">kicsi</option>
+                                    <option value="közepes">közepes</option>
+                                    <option value="magas">magas</option>
+                                    <option value="azonnal">azonnal</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form method="get">
+                        <fieldset>
+                            <div class="urlapelem"   >
+                                <label for="komment">Egyéb megjegyzések.</label>
+                                <textarea id="komment" placeholder="Egyéb megjegyzés a biztonság kedvért."></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+                </div>
+                <input type="button" id="kuld" value="kuld">
+            </article>
+            <aside>
+                <section>
+                    <h3>
+                        Űrlap validáció</h3>
+                    <p>
+                        Itt jelenik majd meg, hoyg van-e hiba az űrlap kitöltésekor. Például űres mező, vagy nem megfelelő formátumú e-mail cím, weboldal, telefonszám.
+                    </p>
+
+                </section>
+                <section>
+                    <h3>Űrlap adatok</h3>
+                    <p>
+                        Itt jelennek majd meg a z űrlapon megadott adatok  </p>
+                </section>
+
+
+            </aside>
+            <footer>
+                <p>Céggel kapcsolat információk</p>
+            </footer>
+        </main>
+    </body>
+</html>

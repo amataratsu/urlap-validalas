@@ -1,0 +1,7 @@
+{
+    "name": "2021.04.20_Mcsaba_urlapValidalas", "version": "1.0.0", "main": "path/to/main.css", "ignore": [
+        ".jshintrc", "**/*.txt"
+    ], "dependencies": {
+    }, "devDependencies": {
+    }
+}
